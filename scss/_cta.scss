@@ -1,0 +1,64 @@
+.cta {
+  margin: 0 16.5rem 20.2rem 16.5rem;
+  background-color: $color-black;
+  height: 60rem;
+  position: relative;
+  background-image: url(../assets/bg-pattern-2.svg);
+  background-position: 33.7rem -4rem;
+  background-repeat: no-repeat;
+  &__img {
+    position: absolute;
+    height: 64.2rem;
+    left: 10.2rem;
+    top: -21.3rem;
+  }
+  &__card {
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    padding: 6rem;
+    row-gap: 2.5rem;
+    position: absolute;
+    right: 9.5rem;
+    top: 9rem;
+    width: 44.6rem;
+    height: 62.5rem;
+    border-radius: 1.2rem;
+    background-color: $color-orange;
+    &--headline {
+      color: $color-white;
+    }
+    &--text {
+      line-height: 3.4rem;
+      color: $color-white;
+    }
+    &--price {
+      color: $color-white;
+      & span {
+        font-size: 6.5rem;
+        font-weight: 700;
+      }
+    }
+    &--buttons {
+      display: grid;
+      row-gap: 1.6rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      &-ios {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        color: $color-white;
+        background-color: $color-black;
+      }
+      &-android {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        color: $color-black;
+        background-color: $color-white;
+      }
+    }
+  }
+}
