@@ -1,0 +1,69 @@
+// Colors:
+$color-cyan: #66e2dc;
+$color-orange: #fa7453;
+$color-yellow: #ffb964;
+$color-white: #fcfaf9;
+$color-black: #191826;
+
+// Fonts:
+$font-primary: "IBM Plex Sans";
+
+// Medias:
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary, sans-serif;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 8.8rem;
+  line-height: 8.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+
+.btn {
+  border-radius: 1.2rem;
+  border: none;
+  width: 33.3rem;
+  height: 6.1rem;
+}
+
+.container {
+  max-width: 144rem;
+  background-image: url(../assets/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 60% -80%;
+  margin: 0 auto;
+}

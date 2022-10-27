@@ -1,0 +1,24 @@
+.heading {
+  margin: 0 0 32.1rem 16.5rem;
+  background-image: url(../assets/bg-pattern-1.svg);
+  background-position-x: 100%;
+  background-position-y: -4rem;
+  background-repeat: no-repeat;
+
+  &__logo {
+    margin-bottom: 12.7rem;
+    margin-top: 6.2rem;
+  }
+
+  &__headline {
+    margin-bottom: 4rem;
+    margin-right: 26rem;
+  }
+
+  &__text {
+    margin-bottom: 32.1rem;
+    color: $color-black;
+    line-height: 3.4rem;
+    margin-right: 41rem;
+  }
+}
