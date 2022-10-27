@@ -70,6 +70,7 @@ h2 {
   background-image: url(../assets/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-position: 60% 100%;
+  background-color: $color-white;
   margin: 0 auto;
 
   @include respond(tablet) {

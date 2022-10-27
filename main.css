@@ -47,6 +47,7 @@ h2 {
   background-image: url(../assets/bg-main-desktop.png);
   background-repeat: no-repeat;
   background-position: 60% 100%;
+  background-color: #fcfaf9;
   margin: 0 auto;
 }
 @media (max-width: 1400px) {
