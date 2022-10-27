@@ -16,7 +16,7 @@ $font-primary: "IBM Plex Sans";
     }
   }
   @if $breakpoint == tablet {
-    @media (max-width: 1400px) {
+    @media (max-width: 1300px) {
       @content;
     }
   }
