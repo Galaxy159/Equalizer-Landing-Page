@@ -58,9 +58,9 @@ h2 {
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 37.5rem;
-    background-image: url(../assets/bg-main-phone.png);
-    background-position: 80% -50%;
+    width: 37.5rem;
+    background-image: url(../assets/bg-main-mobile.png);
+    background-position: 0% -20%;
   }
 }
 
@@ -69,6 +69,11 @@ a {
   cursor: url(../assets/Pointer.svg), auto;
 }
 
+@media (max-width: 768px) {
+  br {
+    display: none;
+  }
+}
 .heading {
   margin: 0 0 32.1rem 16.5rem;
   background-image: url(../assets/bg-pattern-1.svg);
@@ -100,6 +105,7 @@ a {
 @media (max-width: 768px) {
   .heading__logo {
     margin-bottom: 6.4rem;
+    margin-top: 4rem;
   }
 }
 .heading__headline {
@@ -334,6 +340,8 @@ a {
 @media (max-width: 768px) {
   .footer__text {
     margin-bottom: 6.4rem;
+    width: 37.5rem;
+    padding-right: 8rem;
   }
 }
 .footer__text a {

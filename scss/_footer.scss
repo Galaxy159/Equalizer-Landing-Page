@@ -38,6 +38,8 @@
 
     @include respond(phone) {
       margin-bottom: 6.4rem;
+      width: 37.5rem;
+      padding-right: 8rem;
     }
     & a {
       font-weight: 700;

@@ -79,13 +79,19 @@ h2 {
   }
 
   @include respond(phone) {
-    max-width: 37.5rem;
-    background-image: url(../assets/bg-main-phone.png);
-    background-position: 80% -50%;
+    width: 37.5rem;
+    background-image: url(../assets/bg-main-mobile.png);
+    background-position: 0% -20%;
   }
 }
 
 button,
 a {
   cursor: url(../assets/Pointer.svg), auto;
+}
+
+@include respond(phone) {
+  br {
+    display: none;
+  }
 }
