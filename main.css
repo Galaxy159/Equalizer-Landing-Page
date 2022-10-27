@@ -94,8 +94,8 @@ a {
   }
 }
 .heading__logo {
-  margin-bottom: 11.5rem;
-  margin-top: 6.2rem;
+  margin-bottom: 12rem;
+  margin-top: 6rem;
 }
 @media (max-width: 1400px) {
   .heading__logo {
