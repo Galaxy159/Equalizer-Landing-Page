@@ -55,5 +55,16 @@
     @include respond(phone) {
       justify-self: start;
     }
+
+    & a svg {
+      height: 2rem;
+      width: 2rem;
+      fill: #191826;
+      transition: all 0.2s;
+
+      &:hover {
+        fill: $color-orange;
+      }
+    }
   }
 }

@@ -275,6 +275,7 @@ a {
   gap: 0.8rem;
   color: #fcfaf9;
   background-color: #191826;
+  transition: all 0.2s;
 }
 .cta__card--buttons-ios:hover,
 .cta__card--buttons-ios :active {
@@ -287,6 +288,7 @@ a {
   gap: 0.8rem;
   color: #191826;
   background-color: #fcfaf9;
+  transition: all 0.2s;
 }
 .cta__card--buttons-android:hover,
 .cta__card--buttons-android :active {
@@ -358,4 +360,13 @@ a {
   .footer__links {
     justify-self: start;
   }
+}
+.footer__links a svg {
+  height: 2rem;
+  width: 2rem;
+  fill: #191826;
+  transition: all 0.2s;
+}
+.footer__links a svg:hover {
+  fill: #fa7453;
 }/*# sourceMappingURL=main.css.map */
