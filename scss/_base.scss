@@ -59,6 +59,10 @@ h2 {
   border: none;
   width: 33.3rem;
   height: 6.1rem;
+
+  @include respond(tablet) {
+    width: 29.6rem;
+  }
 }
 
 .container {
@@ -67,6 +71,18 @@ h2 {
   background-repeat: no-repeat;
   background-position: 60% 100%;
   margin: 0 auto;
+
+  @include respond(tablet) {
+    max-width: 76.8rem;
+    background-image: url(../assets/bg-main-tablet.png);
+    background-position: 80% -50%;
+  }
+
+  @include respond(phone) {
+    max-width: 37.5rem;
+    background-image: url(../assets/bg-main-phone.png);
+    background-position: 80% -50%;
+  }
 }
 
 button,

@@ -4,20 +4,67 @@
   background-position: 100% -4rem;
   background-repeat: no-repeat;
 
+  @include respond(tablet) {
+    margin: 0 0 0 4rem;
+    background-size: 26.667rem 40rem;
+    background-position: calc(100% + 3.567rem) -3.2rem;
+  }
+
+  @include respond(phone) {
+    margin: 0 2.4rem;
+    background-image: none;
+  }
+
   &__logo {
     margin-bottom: 12.7rem;
     margin-top: 6.2rem;
+
+    @include respond(tablet) {
+      margin-bottom: 9.5rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 6.4rem;
+    }
   }
 
   &__headline {
     margin-bottom: 4rem;
     margin-right: 26rem;
+
+    @include respond(tablet) {
+      font-size: 6.4rem;
+      line-height: 6.4rem;
+      margin-right: 20rem;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+      line-height: 4.8rem;
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
   }
 
   &__text {
-    margin-bottom: 32.1rem;
+    margin-bottom: 32rem;
     color: $color-black;
     line-height: 3.4rem;
     margin-right: 41rem;
+
+    @include respond(tablet) {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.8rem;
+      margin-bottom: 25rem;
+      margin-right: 21.5rem;
+    }
+
+    @include respond(phone) {
+      margin-bottom: 16.6rem;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      margin-right: 0;
+    }
   }
 }

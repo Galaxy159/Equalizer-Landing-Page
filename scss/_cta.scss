@@ -6,11 +6,35 @@
   background-image: url(../assets/bg-pattern-2.svg);
   background-position: 33.7rem -4rem;
   background-repeat: no-repeat;
+
+  @include respond(tablet) {
+    margin: 0 4rem 18.3rem 4rem;
+    background-position: 22.9rem -3.1rem;
+    background-size: 28rem 42rem;
+  }
+
+  @include respond(phone) {
+    margin: 0 0 39rem 0;
+    background-position: 4.8rem 0;
+  }
+
   &__img {
     position: absolute;
     height: 64.2rem;
     left: 10.2rem;
     top: -21.3rem;
+
+    @include respond(tablet) {
+      height: 55.6rem;
+      left: 6.4rem;
+      top: -13.8rem;
+    }
+
+    @include respond(phone) {
+      height: 43rem;
+      left: 8rem;
+      top: -9.8rem;
+    }
   }
   &__card {
     display: grid;
@@ -24,15 +48,50 @@
     height: 62.5rem;
     border-radius: 1.2rem;
     background-color: $color-orange;
+
+    @include respond(tablet) {
+      right: 5.8rem;
+      top: 15rem;
+      width: 39.9rem;
+      height: 54.6rem;
+      padding: 4.8rem;
+      row-gap: 0;
+    }
+
+    @include respond(phone) {
+      width: 37.5rem;
+      right: 0;
+      top: 38rem;
+    }
+
     &--headline {
       color: $color-white;
+
+      @include respond(tablet) {
+        font-size: 3.2rem;
+        margin-bottom: 0.5rem;
+      }
     }
     &--text {
       line-height: 3.4rem;
       color: $color-white;
+
+      @include respond(tablet) {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        margin-bottom: 1.5rem;
+      }
     }
     &--price {
       color: $color-white;
+
+      @include respond(tablet) {
+        margin-bottom: 1.8rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
       & span {
         font-size: 6.5rem;
         font-weight: 700;
