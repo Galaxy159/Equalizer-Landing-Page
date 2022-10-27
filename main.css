@@ -45,6 +45,11 @@ h2 {
   margin: 0 auto;
 }
 
+button,
+a {
+  cursor: url(../assets/Pointer.svg), auto;
+}
+
 .heading {
   margin: 0 0 32.1rem 16.5rem;
   background-image: url(../assets/bg-pattern-1.svg);
@@ -130,4 +135,32 @@ h2 {
   gap: 0.8rem;
   color: #191826;
   background-color: #fcfaf9;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin: 0 16.5rem 10rem 16.5rem;
+}
+.footer__logo {
+  margin-right: 13.8rem;
+  align-self: flex-start;
+}
+.footer__text {
+  margin-right: 30rem;
+  padding-right: 6rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #191826;
+}
+.footer__text a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #191826;
+}
+.footer__links {
+  justify-self: flex-end;
+  display: flex;
+  gap: 2rem;
 }/*# sourceMappingURL=main.css.map */

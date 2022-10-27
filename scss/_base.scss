@@ -11,12 +11,12 @@ $font-primary: "IBM Plex Sans";
 // Medias:
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       @content;
     }
   }
   @if $breakpoint == tablet {
-    @media (max-width: 768px) {
+    @media (max-width: 1440px) {
       @content;
     }
   }
@@ -67,4 +67,9 @@ h2 {
   background-repeat: no-repeat;
   background-position: 60% -80%;
   margin: 0 auto;
+}
+
+button,
+a {
+  cursor: url(../assets/Pointer.svg), auto;
 }
