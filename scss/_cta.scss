@@ -50,6 +50,11 @@
         gap: 0.8rem;
         color: $color-white;
         background-color: $color-black;
+
+        &:hover,
+        :active {
+          background-color: $color-cyan;
+        }
       }
       &-android {
         display: flex;
@@ -58,6 +63,11 @@
         gap: 0.8rem;
         color: $color-black;
         background-color: $color-white;
+
+        &:hover,
+        :active {
+          background-color: $color-yellow;
+        }
       }
     }
   }

@@ -128,6 +128,10 @@ a {
   color: #fcfaf9;
   background-color: #191826;
 }
+.cta__card--buttons-ios:hover,
+.cta__card--buttons-ios :active {
+  background-color: #66e2dc;
+}
 .cta__card--buttons-android {
   display: flex;
   align-items: center;
@@ -135,6 +139,10 @@ a {
   gap: 0.8rem;
   color: #191826;
   background-color: #fcfaf9;
+}
+.cta__card--buttons-android:hover,
+.cta__card--buttons-android :active {
+  background-color: #ffb964;
 }
 
 .footer {
